@@ -79,12 +79,15 @@ Utilise un préfixe de type pour décrire ton changement.
 
 🔹 Types les plus utilisés
 | Type | Description |
+|-------|--------------|
 | **feat** |	Nouvelle fonctionnalité |
 | **fix** | 	Correction de bug |
 | **refactor** |	Réécriture ou amélioration du code sans ajout de feature |
 | **style** |	Changement visuel, indentation ou renommage |
 | **test** |	Ajout ou modification de tests |
 | **doc** |	Mise à jour de documentation ou de commentaires |
+
+---
 
 💡 Exemples
 ```bash
