@@ -1,0 +1,107 @@
+# =========================
+# Unreal Engine 5.6 Gitignore
+# =========================
+
+# Compiled object files
+*.o
+*.obj
+*.pch
+*.pdb
+*.exe
+*.dll
+*.lib
+*.app
+*.dylib
+*.so
+
+# Build directories
+[Bb]inaries/
+[Bb]uild/
+[Dd]erivedDataCache/
+Intermediate/
+Saved/
+ScriptPlugins/
+.vscode/
+.vs/
+.idea/
+.cache/
+*.VC.db
+*.VC.opendb
+
+# Configuration
+*.sln
+*.xcodeproj
+*.xcworkspace
+*.opensdf
+*.sdf
+
+# Auto-generated project files
+*.suo
+*.user
+*.userprefs
+*.log
+*.tlog
+*.pyc
+
+# Crash logs and temporary files
+CrashReportClient/
+*.log
+*.temp
+*.tmp
+*.bak
+*.old
+
+# Unreal Engine auto-generated content
+DerivedDataCache/
+Saved/
+Intermediate/
+*.generated.*
+*_Stub.cpp
+*.gpuprofile
+*.metalmap
+*.target
+
+# Editor and Launcher data
+Engine/DerivedDataCache/
+Engine/Intermediate/
+Engine/Saved/
+
+# Optional: ignore local build artifacts for plugins and projects
+Plugins/*/Intermediate/
+Plugins/*/Binaries/
+Plugins/*/Saved/
+
+# Optional: ignore large cache data
+# (Uncomment if using source control for only assets/code)
+# Content/StarterContent/
+# Content/Developers/
+
+# Mac-specific
+.DS_Store
+
+# Windows-specific
+Thumbs.db
+Desktop.ini
+
+# Unreal Engine project-specific
+# (Keep your .uproject file, ignore local config)
+*.uprojectdirs
+*.uproject.bak
+*.uprojectsave
+*.uoas
+*.uplugin.bak
+*.upluginmanifest
+Config/DefaultEditor.ini
+Config/DefaultEditorPerProjectUserSettings.ini
+
+# Ignore temporary maps or autosaves
+Saved/Autosaves/
+Saved/Backup/
+Saved/Logs/
+Saved/Collections/
+
+# Ignore the local vault cache (Epic Launcher)
+VaultCache/
+
+# Ignore local source control settings
+SourceControlSettings.ini
