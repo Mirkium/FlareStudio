@@ -69,28 +69,30 @@ Chaque commit doit être clair, court et précis.
 Utilise un préfixe de type pour décrire ton changement.
 
 ✅ Format :
-markdown
-Copy code
+🧾 Convention de commit
+
+Chaque commit doit être clair, court et précis.
+Utilise un préfixe de type pour décrire ton changement.
+
+🏷️ Format
 [type]: description courte
-Types les plus utilisés :
+
+🔹 Types les plus utilisés
 Type	Description
 feat	Nouvelle fonctionnalité
 fix	Correction de bug
-refactor	Réécriture/amélioration sans ajout de feature
-style	Changement visuel, indentation, renommage
+refactor	Réécriture ou amélioration du code sans ajout de feature
+style	Changement visuel, indentation ou renommage
 test	Ajout ou modification de tests
-doc	Mise à jour de documentation
-
-💡 Exemples :
-vbnet
-Copy code
+doc	Mise à jour de documentation ou de commentaires
+💡 Exemples
 feat: ajout du système de respawn
 fix: correction du bug de collision sur la border zone
 refactor: simplification du blueprint IA basique
 doc: ajout du guide Git dans le readme
-🔄 Workflow complet
-1️⃣ Créer ta branche
 
+
+Souhaites-tu que je reformate aussi la section “Workflow complet” dans le même style clair avec tableaux et code blocks propres ?
 Copy code
 ```bash
 git checkout dev
