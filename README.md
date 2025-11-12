@@ -24,28 +24,34 @@ Copy code
 
 ---
 
-## ⚙️ Création d’une nouvelle branche
+## Création d’une nouvelle branche
 
-### 🪄 Quand ?
+### Quand ?
 À **chaque nouvelle fonctionnalité ou tâche**, crée une branche **fille de `dev`**.
 
-### 🧩 Commandes :
-```bash
+### Commandes :
 # Se placer sur dev
+```bash
 git checkout dev
-
+```
 # Mettre à jour dev avant de créer la nouvelle branche
+```bash
 git pull origin dev
-
+```
 # Créer la branche fille
+```bash
 git checkout -b NomFeature
-
+```
 # Exemple :
+```bash
 git checkout -b IA-Combat
-🏷️ Convention de nommage :
+```
+> Convention de nommage :
 php-template
+
 Copy code
 <Type>-<NomFonctionnalité>
+
 Exemples :
 
 Player-Movement
@@ -58,7 +64,7 @@ IA-BossPattern
 
 Fix-Respawn
 
-🧾 Convention de commit
+> Convention de commit
 Chaque commit doit être clair, court et précis.
 Utilise un préfixe de type pour décrire ton changement.
 
@@ -84,21 +90,26 @@ refactor: simplification du blueprint IA basique
 doc: ajout du guide Git dans le readme
 🔄 Workflow complet
 1️⃣ Créer ta branche
-bash
+
 Copy code
+```bash
 git checkout dev
 git pull origin dev
 git checkout -b NomFeature
+```
 2️⃣ Coder et faire des commits réguliers
-bash
 Copy code
+```bash
 git add .
 git commit -m "feat: ajout du menu pause"
+```
 3️⃣ Pousser ta branche sur le dépôt
-bash
 Copy code
+```bash
 git push origin NomFeature
+```
 4️⃣ Créer une Pull Request
+
 Base : dev
 
 Compare : ta branche
@@ -114,10 +125,11 @@ Merge ta branche vers dev
 
 Supprime la branche locale et distante :
 
-bash
 Copy code
+```bash
 git branch -d NomFeature
 git push origin --delete NomFeature
+```
 ⚠️ Bonnes pratiques
 ✔️ Toujours faire un git pull origin dev avant de créer une branche
 ✔️ Ne jamais merger directement sur main
@@ -125,23 +137,26 @@ git push origin --delete NomFeature
 ✔️ Bien nommer branches et commits
 ✔️ Après un merge, mettre à jour ta branche locale dev :
 
-bash
 Copy code
+```bash
 git checkout dev
 git pull origin dev
+```
 🧩 Exemple concret
 Tu dois coder la régénération de PV du joueur :
 
-bash
 Copy code
+```bash
 git checkout dev
 git pull origin dev
 git checkout -b Player-RegenPV
-
+```
 # Développement...
+```bash
 git add .
 git commit -m "feat: ajout du système de régénération de PV"
 git push origin Player-RegenPV
+```
 Ensuite, ouvre une Pull Request :
 
 Base : dev
