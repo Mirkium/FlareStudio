@@ -78,19 +78,24 @@ Utilise un préfixe de type pour décrire ton changement.
 [type]: description courte
 
 🔹 Types les plus utilisés
-Type	Description
-feat	Nouvelle fonctionnalité
-fix	Correction de bug
-refactor	Réécriture ou amélioration du code sans ajout de feature
-style	Changement visuel, indentation ou renommage
-test	Ajout ou modification de tests
-doc	Mise à jour de documentation ou de commentaires
-💡 Exemples
-feat: ajout du système de respawn
-fix: correction du bug de collision sur la border zone
-refactor: simplification du blueprint IA basique
-doc: ajout du guide Git dans le readme
+| Type | Description |
+| **feat** |	Nouvelle fonctionnalité |
+| **fix** | 	Correction de bug |
+| **refactor** |	Réécriture ou amélioration du code sans ajout de feature |
+| **style** |	Changement visuel, indentation ou renommage |
+| **test** |	Ajout ou modification de tests |
+| **doc** |	Mise à jour de documentation ou de commentaires |
 
+💡 Exemples
+```bash
+git commit -m "feat: ajout du système de respawn"
+
+git commit -m "fix: correction du bug de collision sur la border zone"
+
+git commit -m "refactor: simplification du blueprint IA basique"
+
+git commit -m "doc: ajout du guide Git dans le readme"
+```
 
 Souhaites-tu que je reformate aussi la section “Workflow complet” dans le même style clair avec tableaux et code blocks propres ?
 Copy code
